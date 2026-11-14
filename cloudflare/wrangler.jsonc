@@ -6,6 +6,10 @@
   "compatibility_date": "2026-11-01",
   "observability": { "enabled": true },
 
+  // Staging URL first (gymmane-web.<account>.workers.dev); the custom domain is added only after final approval.
+  "workers_dev": true,
+  "preview_urls": false,
+
   // Flutter web build + login page, assembled into ./dist by `npm run assemble`.
   // run_worker_first: every request passes the auth gate in src/index.js.
   "assets": {
@@ -19,7 +23,7 @@
     {
       "binding": "DB",
       "database_name": "gymmane-db",
-      "database_id": "REPLACE_WITH_ID_AFTER_APPROVED_CREATE",
+      "database_id": "440e00b4-6596-462c-a1ae-6e79bbe0c46a",
       "migrations_dir": "migrations"
     }
   ],
